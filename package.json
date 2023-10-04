@@ -1,0 +1,16 @@
+{
+    "name": "stackdemo-testing-playwright",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@percy/cli": "^1.27.2",
+        "@playwright/test": "^1.35.0",
+        "@types/node": "^20.8.0",
+        "browserstack-node-sdk": "^1.27.3"
+    },
+    "scripts": {
+        "postinstall": "npm update browserstack-node-sdk",
+        "bstack": "npx browserstack-node-sdk playwright test",
+        "local": "npx playwright test"
+    }
+}
